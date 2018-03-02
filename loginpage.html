@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Login Page </title>
+        <link rel="stylesheet"  href="style.css">
+		
+		
+			  <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		 <meta charset="utf-8">	
+   
+		
+    </head>
+    <body>
+            <h1>
+            Hiking World
+            </h1>
+        
+        <div  id="logincreate">
+        <div class="form">
+			
+            <form class="register-form">
+            <input id="name" type="text" placeholder="User name" value=""/>
+            <input id="pw"type="password" placeholder="Password"  value=""/> 
+            <input id="confpw"type="password" placeholder="Confirm password"  value=""/>   
+            <input id="email"type="email" placeholder="E-mail Address"  value=""/>  
+            <button type="submit" onclick="storevalid()">Create</button>  
+            <p class="message">Already Registered? <a href="#"> Login</a>   
+            </p>    
+            </form> 
+        
+            <form class="login-form">
+            <input id="logemail" type="email" placeholder="E-mail Address" value=""/>
+            <input id="logpw" type="password" placeholder="Passwrod" value=""/>     
+            <button id="loginbtn" type="submit" onclick="loginvalid()">Login</button>
+
+                
+            <p class="message">Not Registered? <a href="#"> Register</a></p> 
+            <p ><a href="forgotpw.html" data-rel="popup"> Forgot Password?</a></p>     
+             
+            </form> 
+                        
+            
+        </div>
+        </div>
+		
+		 <div id="forget" >
+        <div class="form">
+            
+            <form class="forgotpw-form">
+            <lable> Forgot password</lable>    
+            <input id="forname" type="text" placeholder="Username" value=""/>
+            <input id="foremail" type="email" placeholder="E-mail Address"value=""/>     
+            <button type="submit" onclick="Forgotpw()">Forgot password</button> 
+            </form> 
+    
+
+        </div>
+        </div>
+		
+		    <div id="change">
+			<div class="form">
+            <form class="changpw-form">
+		
+            <p>User Setting</p>
+                <button class="message" disabled="disabled"><a href="#">  Reset Password </a></button>  
+          
+            </form> 
+        
+            <form class="chpwinfo-form">
+            <input id="oldpw" type="password" placeholder="Passwrod" value=""/>
+            <input id="confoldpw" type="password" placeholder="Confirm Passwrod" value=""/>
+            <input id="newpw" type="password" placeholder="New Passwrod" value=""/>    
+            <button type="submit" onclick="changepw()">Change Password</button>
+     
+            </form> 
+                        
+            
+        </div>
+        </div>
+         
+		
+		
+    
+        <script src='https://code.jquery.com/jquery-3.3.1.min.js'> </script>
+        <script>
+        $('.message a').click(function(){
+        $('form').animate({height:"toggle", opacity: "toggle"}, "slow");                      
+        });
+        
+        </script>
+		<script src="Userrecord.js"></script>
+        <script src="forgotpw.js"></script>
+        <script src="validdata.js"></script>
+
+		
+>
+        
+        
+ 
+    
+    
+    </body>
+    
+</html>
